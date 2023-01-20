@@ -1,0 +1,79 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<div class="w3-container">
+    <img src="banner.jfif" style="width:100% ;">
+</div>
+<div class="w3-bar w3-orange">
+ <button class="w3-bar-item w3-button" onclick="openKota('CBR1000RR')">CBR1000RR</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('R1M')">R-1M</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('H2R')">H2R</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Hayabusa')">Hayabusa</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('ninja25r')">ninja25r</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('ninja10R')">ninja10R</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('BMW1000RR')">BMW1000RR</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('BIODATA')">Bio-Data</button>
+</div>
+
+<div id="H2R" class="w3-container kota w3-animate-top" style="display:none">
+ <h2>H2R</h2>
+ <img src="h2r.jpg">
+ <p>Motor SPORT 1000 CC MILIK KAWASAKI</p>
+</div>
+<div id="CBR1000RR" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>CBR1000RR</h2>
+ <img src="CBR1000RR.jfif">
+ <p>Motor SPORT 1000 CC MILIK HONDA</p>
+</div>
+<div id="R1M" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>R1M</h2>
+ <img src="R1M.jfif">
+ <p>Motor SPORT 1000 CC MILIK YAMAHA</p>
+</div>
+ <div id="r25" class="w3-container kota w3-animate-right" style="display:none">
+    <h2>R25</h2>
+    <img src="R25.jfif">
+    <p>Motor SPORT 250 CC MILIK YAMAHA </p>
+ </div>
+    <div id="Hayabusa" class="w3-container kota w3-animate-opacity" style="display:none">
+        <h2>Hayabusa</h2>
+        <img src="Hayabusa.jfif">
+        <p>Motor SPORT 1000 CC MILIK SUZUKI</p>
+ </div>
+    </div>
+    <div id="ninja25r" class="w3-container kota w3-animate-Zoom" style="display:none">
+        <h2>ninja25r</h2>
+        <img src="ninja25r.jfif">
+        <p>Motor SPORT 250 CC MILIK KAWASAKI</p>
+    </div>
+    <div id="ninja10R" class="w3-container kota w3-Spin" style="display:none">
+        <h2>ninja10R</h2>
+        <img src="ninja10R.jfif">
+ <p>Motor SPORT 1000 CC MILIK KAWASAKI</p>
+    </div>
+    <div id="BMW1000RR" class="w3-container kota w3-Fading" style="display:none">
+        <h2>BMW1000RR</h2>
+        <img src="bmw100rr.jpg">
+ <p>Motor SPORT 1000 CC MILIK BMW</p>
+    </div>
+    <div id="BIODATA" class="w3-container kota w3-Fading" style="display:none">
+        <h2>Bio-Data</h2>
+        <img src="WhatsApp Image 2023-01-20 at 17.55.09.jpeg">
+ <p>Nama:Laurence</p>
+ <p>NIM:10122068</p>
+    </div>
+</div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
